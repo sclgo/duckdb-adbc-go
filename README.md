@@ -16,7 +16,7 @@ for [ADBC](https://arrow.apache.org/adbc/) drivers, maintained by the [Apache Ar
   especially in CI builds. Remember, projects that import your Go library [must download](https://go.dev/wiki/Modules#why-does-go-mod-tidy-record-indirect-and-test-dependencies-in-my-gomod) 
   all your transitive dependencies during `go mod tidy`, even you use them only in tests.
 - **apps that need to work with a specific DuckDB version, a DuckDB [preview release](https://duckdb.org/docs/installation/?version=main), 
-  or even multiple version at the same time** - 
+  or even multiple versions at the same time** - 
   This driver loads the DuckDB dynamic library at runtime. Multiple DuckDB dynamic libraries can be used 
   at the same time in the same app. In contrast, the official DuckDB Go client either works 
   with the fixed bundled DuckDB release or with a single specific dynamic 
